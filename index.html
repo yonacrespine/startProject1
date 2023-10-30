@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script defer src="function.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Task Board</title>
+</head>
+<body>
+
+
+    <section id="mySection1">
+        <div id="main">
+            
+          <h1> My Task Board</h1>
+
+            <div class="container" id="myDivForm" >
+             
+
+              <div class="col-6">
+                <label for="titleTask" class="form-label">Title</Title></label>
+                <input type="text" class="form-control" placeholder="Enter a title for your task" id="titleTask"/>
+                <p id="messageErrorTitle"> </p>
+              </div>
+
+              <div class="col-6">
+                <label for="detailTask" class="form-label"></label>
+                <textarea id="detailTask" class="="form-control placeholder="Enter detail of your task"></textarea>
+                <p id="messageErrorTask"></p>
+              </div>
+
+              <div class="col-md-4 category">
+                <label for="status" class="form-label" >Status</label>
+                <select id="status" class="form-select" required>
+                  <option selected >Choose...</option>
+                  <option>Working On It</option>
+                  <option>Done</option>
+                  <option>Stuck</option>
+                 
+                </select>
+                <p id="messageErrorStatus"></p>
+              </div>
+
+
+              <div class="col-6">
+                <label for="percentageCompleted" class="form-label"> % Completed</label>
+                <input type="number" class="form-control"  placeholder="Enter the percentage Completed" id="percentageCompleted">
+                <p id="messageErrorPercentageCompleted"></p>
+              </div>
+
+              
+
+
+              <div class="col-md-4 category">
+                <label for="levelOfImportance" class="form-label" >level of Importance</label>
+                <select id="levelOfImportance" class="form-select" required>
+                  <option selected >Choose...</option>
+                  <option>Low</option>
+                  <option>Medium</option>
+                  <option>High</option>
+                 
+                </select>
+                <p id="messageErrorlevelOfImportance"></p>
+              </div>
+
+
+
+
+              <div class="col-6">
+                <label for="timeLine" class="form-label">TimeLine</label>
+                <input type="date" class="form-control"  placeholder="dd/mm/yyyy" id="timeLine">
+                <p id="messageErrorTimeLine"></p>
+              </div>
+
+
+
+            <div id="myDivButton">
+              <a href="#myAllTable">
+              <button class="myButton btn btn-secondary" onclick="save(); "> save</button>
+              </a>
+                
+              
+              <button class="myButton btn btn-secondary" onclick="formInitialization()"> reinisialiser</button>
+              
+
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <section id="mySection2">
+
+        <br>
+
+
+
+        <div class="table-responsive">
+            <table  id="myAllTable" class="table table-striped table-hover">
+
+                <thead>
+                    
+                    <tr>
+                      
+                      <th scope="col">Title Task</th>
+                      <th scope="col">Time Edit </th>
+                      <th scope="col">Details</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">% Completed</th>
+                      <th scope="col">Importance</th>
+                      <th scope="col">TimeLine</th>
+                      <th scope="col">Edit</th>
+                      <th scope="col">Delete </th>
+
+
+
+      
+                    </tr>
+
+
+            </thead>
+              
+                <tbody id="taskTable"></tbody>
+
+
+
+            </table>
+          
+          </div>
+
+
+        </div>
+
+    </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+#mySection2{
+    padding: 0;
+    margin: 0;
+    min-height: 30%;
+   
+}
+
+
+.offcanvas{
+    height: 400px;
+}
+
+
+
+
+
+#mySection1{
+    
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    background-color: rgb(215, 205, 192);
+    background-image: url(assets/images/postitOrange.jpg);
+    background-size: cover;
+}
+
+
+
+#myDivButton{
+    display: flex;
+}
+
+.myButton{
+    margin-left: 12px;
+}
+
+
+/* input[type="text"],input[type="number"],input[type="date"], textarea {
+
+        background-color: transparent;
+        
+      
+      } */
+
+label{
+    color:  rgb(152, 95, 95);
+}
+
+h1{
+    padding: 20px;
+    color:  rgb(152, 95, 95);
+    font-weight: 400;
+    text-align: center;
+   
+    
+}
+    
+.table{
+    --bs-table-color:#495057;
+    --bs-table-striped-color: #d63384;
+    --bs-table-hover-color: #6f42c1;
+}
+
+#messageErrorTitle, #messageErrorTask, #messageErrorStatus, #messageErrorPercentageCompleted, #messageErrorlevelOfImportance,#messageErrorTimeLine{
+    color: red;
+    margin-top: 10px;
+}
+
+
+input, textarea, select {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+input:focus,  textarea:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+
+
+
+
+textarea {
+    height: 70px;
+    resize:none;
+    overflow:auto; 
+}
+
+
+#myDivForm {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  
+  }
