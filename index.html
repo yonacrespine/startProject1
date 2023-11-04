@@ -35,10 +35,10 @@
 
               <div class="col-md-4 category">
                 <label for="status" class="form-label" >Status</label>
-                <select id="status" class="form-select" required>
+                <select onclick="statusDone()" id="status" class="form-select" required>
                   <option selected >Choose...</option>
                   <option>Working On It</option>
-                  <option>Done</option>
+                  <option >Done</option>
                   <option>Stuck</option>
                  
                 </select>
@@ -48,7 +48,7 @@
 
               <div class="col-6">
                 <label for="percentageCompleted" class="form-label"> % Completed</label>
-                <input type="number" class="form-control"  placeholder="Enter the percentage Completed" id="percentageCompleted">
+                <input  type="number" class="form-control"  placeholder="Enter the percentage Completed" id="percentageCompleted">
                 <p id="messageErrorPercentageCompleted"></p>
               </div>
 
@@ -80,11 +80,11 @@
 
             <div id="myDivButton">
               <a href="#myAllTable">
-              <button class="myButton btn btn-secondary" onclick="save(); "> save</button>
+              <button class="myButton btn btn-secondary" onclick="save()"> Save</button>
               </a>
                 
               
-              <button class="myButton btn btn-secondary" onclick="formInitialization()"> reinisialiser</button>
+              <button class="myButton btn btn-secondary" onclick="formInitialization()"> Reset</button>
               
 
             </div>
@@ -105,7 +105,7 @@
                 <thead>
                     
                     <tr>
-                      
+                      <th scope="col"></th>
                       <th scope="col">Title Task</th>
                       <th scope="col">Time Edit </th>
                       <th scope="col">Details</th>
@@ -113,8 +113,7 @@
                       <th scope="col">% Completed</th>
                       <th scope="col">Importance</th>
                       <th scope="col">TimeLine</th>
-                      <th scope="col">Edit</th>
-                      <th scope="col">Delete </th>
+                      <th scope="col"> </th>
 
 
 
